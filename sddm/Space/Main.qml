@@ -305,21 +305,21 @@ Item {
 
                 actionItems: [
                     ActionButton {
-                        iconSource: Qt.resolvedUrl("assets/suspend.svgz")
+                        iconSource: "system-suspend"
                         text: i18ndc("plasma_lookandfeel_org.kde.lookandfeel","Suspend to RAM","Sleep")                        
                         onClicked: sddm.suspend()
                         enabled: sddm.canSuspend
                         visible: !inputPanel.keyboardActive
                     },
                     ActionButton {
-                        iconSource: Qt.resolvedUrl("assets/restart.svgz")
+                        iconSource: "system-reboot"
                         text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Restart")
                         onClicked: sddm.reboot()
                         enabled: sddm.canReboot
                         visible: !inputPanel.keyboardActive
                     },
                     ActionButton {
-                        iconSource: Qt.resolvedUrl("assets/shutdown.svgz")
+                        iconSource: "system-shutdown"
                         text: i18nd("plasma_lookandfeel_org.kde.lookandfeel","Shut Down")
                         onClicked: sddm.powerOff()
                         enabled: sddm.canPowerOff
