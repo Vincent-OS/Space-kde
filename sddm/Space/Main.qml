@@ -16,7 +16,7 @@
  *   Free Software Foundation, Inc.,
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
  */
- 
+
 import QtQuick 2.15
 
 import QtQuick.Layouts 1.15
@@ -344,23 +344,11 @@ Item {
         //     z:-1
         // }
 
-        ShaderEffectSource {
-            id: blurArea
-            sourceItem: wallpaper
-            
-            anchors.fill: parent
-            
-            sourceRect: Qt.rect(x,y,width,height)
-            visible: true
-            z:-2
-        }
-
         GaussianBlur {
             id: blur
             height: blurArea.height
             width: blurArea.width
             source: blurArea
-            radius: 75
             samples: 150
             cached: true
          //   anchors.centerIn: formBg

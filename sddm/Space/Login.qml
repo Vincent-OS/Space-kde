@@ -140,7 +140,6 @@ Item {
                 width: userImage.width + 5
                 height: userImage.height + 5
                 anchors.centerIn: userImage
-                radius: width / 2
                 color: "#fff"
                 opacity: 0.2
                 clip: true
@@ -165,7 +164,6 @@ Item {
                 width: userListView.contentWidth 
                 height: userListView.height
                 anchors.centerIn: userListView
-                radius: width / 2
                 color: "#fff"
                 opacity: 0.1
                 clip: true
@@ -294,7 +292,6 @@ Item {
                     text: root.showUsernamePrompt || userList.currentItem.needsPassword ? "" : i18n("Log In")
                     background: Rectangle {
                         id: buttonBackground
-                        radius: 8
                         anchors.fill: parent
                         color: enabled ? "#fff" : "#ADADAD"
                         opacity: 0.1
