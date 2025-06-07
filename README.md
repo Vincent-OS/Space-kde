@@ -5,9 +5,7 @@ Modifications including:
 - Removing the blur on the background image
 - Put users icon in square instead of circle
 
-<div align="center">
-[space-preview](sddm/Space/preview.png)
-</div>
+![space-preview](sddm/Space/preview.png)
 
 ## License
 This project is licensed under the GNU Lesser General Public License v2.1 - see the [LICENSE](LICENSE) file for details.
